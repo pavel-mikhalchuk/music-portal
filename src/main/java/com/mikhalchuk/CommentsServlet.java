@@ -13,7 +13,12 @@ public class CommentsServlet extends HttpServlet {
 
     @Override
     protected void service(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        super.service(req, resp);
+        String name = req.getParameter("user");
+        String comment = req.getParameter("comment");
+
+        req.setAttribute("status", 1);
+
+        req.getRequestDispatcher("index.jsp").forward(req, resp);
     }
 
 }
