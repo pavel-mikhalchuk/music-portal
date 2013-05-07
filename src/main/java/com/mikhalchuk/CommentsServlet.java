@@ -5,6 +5,8 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
+import java.sql.Connection;
+import java.sql.DriverManager;
 
 /**
  * @author Pavel Mikhalchuk
@@ -16,9 +18,15 @@ public class CommentsServlet extends HttpServlet {
         String name = req.getParameter("user");
         String comment = req.getParameter("comment");
 
-        req.setAttribute("status", 1);
+        Class.forName("com.mysql.jdbc.Driver").newInstance();
+        Connection conn = DriverManager.getConnection("jdbc:mysql://localhost/coffeebreak", "username", "password");
 
-        req.getRequestDispatcher("index.jsp").forward(req, resp);
+        //selects
+        //inserts
+
+        conn.close();
+
+        resp.sendRedirect("comments.jsp");
     }
 
 }
