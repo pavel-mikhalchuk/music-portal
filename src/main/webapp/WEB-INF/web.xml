@@ -24,4 +24,15 @@
         <url-pattern>/news</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>Add News Servlet</servlet-name>
+        <servlet-class>com.mikhalchuk.mp.web.AddNewsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Add News Servlet</servlet-name>
+        <url-pattern>/addnews</url-pattern>
+    </servlet-mapping>
+
+
 </web-app>

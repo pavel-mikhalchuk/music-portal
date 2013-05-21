@@ -1,26 +1,20 @@
 package com.mikhalchuk.mp.entity;
 
-import java.util.Date;
 
 /**
- * @author Pavel Mikhalchuk
+ * @author Dmitry Mikhalchuk
  */
-public class News {
-
+public class Events {
     private Long id;
     private String title;
-    private String summary;
     private String description;
     private String pictureUrl;
-    private Date date;
 
-    public News(Long id, String title, String summary, String description, String pictureUrl, Date date) {
+    public Events(Long id, String title, String description, String pictureUrl) {
         this.id = id;
         this.title = title;
-        this.summary = summary;
         this.description = description;
         this.pictureUrl = pictureUrl;
-        this.date = date;
     }
 
     public Long getId() {
@@ -39,14 +33,6 @@ public class News {
         this.title = title;
     }
 
-    public String getSummary() {
-        return summary;
-    }
-
-    public void setSummary(String summary) {
-        this.summary = summary;
-    }
-
     public String getDescription() {
         return description;
     }
@@ -61,14 +47,6 @@ public class News {
 
     public void setPictureUrl(String pictureUrl) {
         this.pictureUrl = pictureUrl;
-    }
-
-    public Date getDate() {
-        return date;
-    }
-
-    public void setDate(Date date) {
-        this.date = date;
     }
 
 }

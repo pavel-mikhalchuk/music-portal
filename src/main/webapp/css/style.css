@@ -30,3 +30,28 @@
 .clear {
     clear: both;
 }
+
+.form {
+    display: block;
+    width: 100%;
+}
+
+.form input {
+    width: 170px;
+    padding: 2px;
+    border: 1px solid #CCCCCC;
+    margin: 5px 5px 0 0;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.form textarea {
+    width: 70%;
+    border: 1px solid #CCCCCC;
+    padding: 2px;
+    overflow: auto;
+    box-shadow: 0 0 2px rgba(0, 0, 0, 0.2);
+}
+
+.form p {
+    margin: 5px 0;
+}
