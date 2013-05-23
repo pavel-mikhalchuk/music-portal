@@ -1,10 +1,8 @@
 <%--
-  Created by IntelliJ IDEA.
-  User: FCBAYERN
-  Date: 22.05.13
-  Time: 21:57
-  To change this template use File | Settings | File Templates.
+  User: Dmitry Mikhalchuk
 --%>
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
+<%@ taglib prefix="fmt" uri="http://java.sun.com/jsp/jstl/fmt" %>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -41,11 +39,11 @@
 <div class="wrapper">
     <div class="container">
         <div class="content con1">
-            <img class="imgl" src="${news.pictureUrl}" alt="${news.title}" width="150" height="150"/>
+            <img class="imgl" src="${report.pictureUrl}" alt="${report.title}" width="190" height="190"/>
 
-            <h2>${news.title}</h2>
+            <h2>${report.title}</h2>
 
-            <p style="line-height: 1.5;">${news.description}</p>
+            <p style="line-height: 1.5;">${report.description}</p>
             <br class="clear">
 
             <div id="comments">
@@ -102,9 +100,7 @@
                         <p>${n.summary}</p>
                     </li>
                 </c:forEach>
-                <br/>
-
-                <p><strong><a href="#">читать новости</a></strong>
+                <p><strong><a href="#">все новости</a></strong>
             </ul>
             <br/>
 

@@ -37,7 +37,7 @@
 <div class="wrapper">
     <div class="container">
         <div class="content con1">
-            <img class="imgl" src="${news.pictureUrl}" alt="${news.title}" width="150" height="150"/>
+            <img class="imgl" src="${news.pictureUrl}" alt="${news.title}" width="190" height="190"/>
 
             <h2>${news.title}</h2>
 
@@ -74,53 +74,53 @@
                         <input type="submit" id="submit" value="отправить"/>
                         &nbsp;
                         <input type="reset" id="reset" tabindex="5" value="очистить"/>
+                        &nbsp;
+                        <input type="hidden" name="news_id" value="${param.id}"/>
                     </p>
-                    <input type="hidden" name="news_id" value=<%%>"/>
+
 
                 </form>
             </div>
 
         </div>
         <div class=" column con2">
-                    <h2>Новости</h2>
-                    <ul class="latestnews">
-                        <c:forEach items="${lastNews}" var="n" end="2">
-                            <li><img width="100" height="100" src="${n.pictureUrl}" alt="${n.title}"/>
+            <h2>Новости</h2>
+            <ul class="latestnews">
+                <c:forEach items="${lastNews}" var="n" end="2">
+                    <li><img width="100" height="100" src="${n.pictureUrl}" alt="${n.title}"/>
 
-                                <p><strong><a href="news?id=${n.id}">${n.title}</a></strong></p>
-                                <br/>
-
-                                <p>${n.summary}</p>
-                            </li>
-                        </c:forEach>
+                        <p><strong><a href="news?id=${n.id}">${n.title}</a></strong></p>
                         <br/>
 
-                        <p><strong><a href="#">читать новости</a></strong>
-                    </ul>
-                    <br/>
+                        <p>${n.summary}</p>
+                    </li>
+                </c:forEach>
+                <p><strong><a href="#">все новости</a></strong>
+            </ul>
+            <br/>
 
-                    <div id="featured">
-                        <ul>
-                            <li>
-                                <h2>Indonectetus facilis leonib</h2>
+            <div id="featured">
+                <ul>
+                    <li>
+                        <h2>Indonectetus facilis leonib</h2>
 
-                                <p class="imgholder"><img width="240px" height="240px" src="images/demo/240x90.gif"
-                                                          alt=""/></p>
-                            </li>
-                        </ul>
-                    </div>
+                        <p class="imgholder"><img width="240px" height="240px" src="images/demo/240x90.gif"
+                                                  alt=""/></p>
+                    </li>
+                </ul>
             </div>
-            <br class="clear"/>
         </div>
+        <br class="clear"/>
     </div>
+</div>
 
-    <div class="wrapper col8">
-        <div id="copyright">
-            <p class="fl_left">Copyright &copy; 2013 - All Rights Reserved - <a href="#">EXTRALOUD</a></p>
-            <br class="clear"/>
-        </div>
+<div class="wrapper col8">
+    <div id="copyright">
+        <p class="fl_left">Copyright &copy; 2013 - All Rights Reserved - <a href="#">EXTRALOUD</a></p>
+        <br class="clear"/>
     </div>
-    <!--<div class="news">
+</div>
+<!--<div class="news">
     <div class="news-picture"><img width="100" height="100" src="${news.pictureUrl}" alt="${news.title}"/></div>
     <div class="news-title">${news.title}</div>
     <div class="news-date"><fmt:formatDate value="${news.date}" pattern="MMM d, yyyy"/></div>

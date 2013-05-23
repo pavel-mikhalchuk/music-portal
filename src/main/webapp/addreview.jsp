@@ -11,7 +11,7 @@
 <h2>Add review</h2>
 
 <div class="form">
-    <form action="addreview" method="post">
+    <form action="addreviews" method="post">
         <p>
             <input type="text" name="title" id="title" value="" size="22"/>
             <label for="title">Title</label>

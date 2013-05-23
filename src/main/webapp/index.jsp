@@ -13,6 +13,10 @@
 
 <div class="wrapper col2">
     <div id="topbar">
+        <div id="search">
+            <img src="http://s48.radikal.ru/i121/1305/67/8e2deb3eae0c.gif" alt="EXTRALOUD"/>
+        </div>
+
         <div id="topnav">
             <ul>
                 <li class="active"><a href="/">Главная</a></li>
@@ -20,13 +24,24 @@
                 <li><a href="full-width.html">Афиша</a></li>
                 <li><a href="#">Статьи</a>
                     <ul>
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Интервью</a></li>
+                        <li><a href="#">Места</a></li>
+                        <li><a href="#">Люди</a></li>
                     </ul>
                 </li>
                 <li class="last"><a href="#">О проекте</a></li>
             </ul>
+        </div>
+        <br class="clear"/>
+    </div>
+</div>
+<!--###################################################################-->
+
+<div class="wrapper">
+    <div class="container">
+        <div class="content">
+            <div id="featured_slide">
+            </div>
         </div>
         <br class="clear"/>
     </div>
@@ -40,27 +55,26 @@
                 <ul>
                     <c:forEach items="${lastReports}" var="n" begin="0" end="2" varStatus="s">
                         <li ${s.last ? 'class="last"' : ''}>
-                            <img width="190" height="130" src="${n.pictureUrl}" alt="${n.title}"/>
+                            <a href="reports?id=${n.id}"> <img width="190" height="190" src="${n.pictureUrl}"
+                                                               alt="${n.title}"/> </a>
 
                             <p class="readmore"><a href="reports?id=${n.id}">${n.title};</a></p>
                         </li>
                     </c:forEach>
                 </ul>
-
+                <br class="clear"/>
+            </div>
+            <div id="hpage_latest">
                 <h2>Рецензии</h2>
                 <ul>
-                    <li><img width="190px" height="130px" src="images/demo/190x130.gif" alt=""/>
+                    <c:forEach items="${lastReviews}" var="n" begin="0" end="2" varStatus="s">
+                        <li ${s.last ? 'class="last"' : ''}>
+                            <a href="reviews?id=${n.id}"> <img width="190" height="190" src="${n.pictureUrl}"
+                                                               alt="${n.title}"/> </a>
 
-                        <p class="readmore"><a href="#">Continue Reading Continue Reading &raquo;</a></p>
-                    </li>
-                    <li><img width="190px" height="130px" src="images/demo/190x130.gif" alt=""/>
-
-                        <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
-                    </li>
-                    <li class="last"><img width="190px" height="130px" src="images/demo/190x130.gif" alt=""/>
-
-                        <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
-                    </li>
+                            <p class="readmore"><a href="reviews?id=${n.id}">${n.title};</a></p>
+                        </li>
+                    </c:forEach>
                 </ul>
                 <br class="clear"/>
             </div>
@@ -68,8 +82,9 @@
         <div class="column">
             <h2>Новости</h2>
             <ul class="latestnews">
-                <c:forEach items="${news}" var="n" end="2">
-                    <li><img width="100" height="100" src="${n.pictureUrl}" alt="${n.title}"/>
+                <c:forEach items="${news}" var="n" end="3">
+                    <li><a href="news?id=${n.id}"> <img width="100" height="100" src="${n.pictureUrl}"
+                                                        alt="${n.title}"/> </a>
 
                         <p><strong><a href="news?id=${n.id}">${n.title}</a></strong></p>
                         <br/>
@@ -77,9 +92,7 @@
                         <p>${n.summary}</p>
                     </li>
                 </c:forEach>
-                <br/>
-
-                <p><strong><a href="#">читать новости</a></strong>
+                <p><strong><a href="#">все новости</a></strong>
             </ul>
         </div>
         <br class="clear"/>
@@ -89,62 +102,56 @@
 <div class="wrapper">
     <div class="container">
         <div class="content">
-            <!--<div id="hpage_latest">-->
-            <ul>
-                <li><h2>Feugiatrutrum</h2>
+            <div id="hpage_latest">
+                <ul>
+                    <li><h2>Интервью</h2>
 
-                    <p>Nullamlacus dui ipsum conseqlo borttis non euisque morbipen a sdapibulum orna.</p>
+                        <p class="readmore"><a href="#">Continue Reading</a></p>
 
-                    <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+                        <p>Nullamlacus dui ipsum conseqlo borttis non euisque morbipen a sdapibulum orna.</p>
 
-                    <p>Urnau ltrices quis curabitur pha sellent esque congue magnisve stib ulum quismodo nulla
-                        et.</p>
+                        <p class="readmore"><a href="#">Continue Reading</a></p>
 
-                    <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+                        <p>Nullamlacus dui ipsum conseqlo borttis non euisque morbipen a sdapibulum orna.</p>
 
-                    <p>Urnau ltrices quis curabitur pha sellent esque congue magnisve stib ulum quismodo nulla
-                        et.</p>
+                        <p class="readmore"><a href="#">Continue Reading</a></p>
 
-                    <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
-                </li>
-                <li><h2>Feugiatrutrum</h2>
+                        <p>Nullamlacus dui ipsum conseqlo borttis non euisque morbipen a sdapibulum orna.</p>
+                    </li>
+                    <li><h2>Места</h2>
 
-                    <p>Nullamlacus dui ipsum conseqlo borttis non euisque morbipen a sdapibulum orna.</p>
+                        <p class="readmore"><a href="#">Continue Reading</a></p>
 
-                    <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+                        <p>Nullamlacus dui ipsum conseqlo borttis non euisque morbipen a sdapibulum orna.</p>
 
-                    <p>Urnau ltrices quis curabitur pha sellent esque congue magnisve stib ulum quismodo nulla
-                        et.</p>
+                        <p class="readmore"><a href="#">Continue Reading</a></p>
 
-                    <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+                        <p>Nullamlacus dui ipsum conseqlo borttis non euisque morbipen a sdapibulum orna.</p>
 
-                    <p>Urnau ltrices quis curabitur pha sellent esque congue magnisve stib ulum quismodo nulla
-                        et.</p>
+                        <p class="readmore"><a href="#">Continue Reading</a></p>
 
-                    <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
-                </li>
-                <li class="last"><h2>Feugiatrutrum</h2>
+                        <p>Nullamlacus dui ipsum conseqlo borttis non euisque morbipen a sdapibulum orna.</p>
+                    </li>
+                    <li class="last"><h2>Люди</h2>
 
-                    <p>Nullamlacus dui ipsum conseqlo borttis non euisque morbipen a sdapibulum orna.</p>
+                        <p class="readmore"><a href="#">Continue Reading</a></p>
 
-                    <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+                        <p>Nullamlacus dui ipsum conseqlo borttis non euisque morbipen a sdapibulum orna.</p>
 
-                    <p>Urnau ltrices quis curabitur pha sellent esque congue magnisve stib ulum quismodo nulla
-                        et.</p>
+                        <p class="readmore"><a href="#">Continue Reading</a></p>
 
-                    <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+                        <p>Nullamlacus dui ipsum conseqlo borttis non euisque morbipen a sdapibulum orna.</p>
 
-                    <p>Urnau ltrices quis curabitur pha sellent esque congue magnisve stib ulum quismodo nulla
-                        et.</p>
+                        <p class="readmore"><a href="#">Continue Reading</a></p>
 
-                    <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
-                </li>
-            </ul>
-            <br class="clear"/>
-            <!--</div>-->
+                        <p>Nullamlacus dui ipsum conseqlo borttis non euisque morbipen a sdapibulum orna.</p>
+                    </li>
+                </ul>
+                <br class="clear"/>
+            </div>
         </div>
         <div class="column">
-            <h2>Видео</h2>
+            <h2><a href="http://www.youtube.com/user/dmitry61585">Видео</a></h2>
 
             <div class="holder">
                 <object width="300px" height="250px"

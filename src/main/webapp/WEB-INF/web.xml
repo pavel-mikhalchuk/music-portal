@@ -64,5 +64,25 @@
         <url-pattern>/addreports</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>Review Servlet</servlet-name>
+        <servlet-class>com.mikhalchuk.mp.web.ReviewServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Review Servlet</servlet-name>
+        <url-pattern>/reviews</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Add Reviews Servlet</servlet-name>
+        <servlet-class>com.mikhalchuk.mp.web.AddReviewServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Add Reviews Servlet</servlet-name>
+        <url-pattern>/addreviews</url-pattern>
+    </servlet-mapping>
+
 
 </web-app>

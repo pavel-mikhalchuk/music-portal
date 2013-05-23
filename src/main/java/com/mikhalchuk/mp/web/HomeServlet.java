@@ -19,6 +19,7 @@ public class HomeServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         req.setAttribute("news", db.getNews());
         req.setAttribute("lastReports", db.getReports());
+        req.setAttribute("lastReviews", db.getReviews());
         req.getRequestDispatcher("index.jsp").forward(req, resp);
     }
 

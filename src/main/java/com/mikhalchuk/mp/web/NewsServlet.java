@@ -24,5 +24,4 @@ public class NewsServlet extends HttpServlet {
         req.setAttribute("comments", db.findComments(id));
         req.getRequestDispatcher("news.jsp").forward(req, resp);
     }
-
 }
