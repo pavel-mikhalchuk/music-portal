@@ -21,9 +21,10 @@ public class AddCommentServlet extends HttpServlet {
         String user = req.getParameter("user");
         String comment = req.getParameter("comment");
         Date date = new Date();
-        Long newsId = Long.parseLong("accountID");
+        Long newsId = Long.parseLong(req.getParameter("news_id"));
 
         db.createComment(user, comment, date, newsId);
 
+        resp.sendRedirect("news?id=" + newsId);
     }
 }
