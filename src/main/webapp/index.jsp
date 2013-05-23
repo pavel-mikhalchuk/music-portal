@@ -36,20 +36,15 @@
     <div class="container">
         <div class="content">
             <div id="hpage_latest">
-                <h2>События</h2>
+                <h2>Отчёты</h2>
                 <ul>
-                    <li><img width="190px" height="130px" src="images/demo/190x130.gif" alt=""/>
+                    <c:forEach items="${lastReports}" var="n" begin="0" end="2" varStatus="s">
+                        <li ${s.last ? 'class="last"' : ''}>
+                            <img width="190" height="130" src="${n.pictureUrl}" alt="${n.title}"/>
 
-                        <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
-                    </li>
-                    <li><img width="190px" height="130px" src="images/demo/190x130.gif" alt=""/>
-
-                        <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
-                    </li>
-                    <li class="last"><img width="190px" height="130px" src="images/demo/190x130.gif" alt=""/>
-
-                        <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
-                    </li>
+                            <p class="readmore"><a href="reports?id=${n.id}">${n.title};</a></p>
+                        </li>
+                    </c:forEach>
                 </ul>
 
                 <h2>Рецензии</h2>
@@ -74,7 +69,7 @@
             <h2>Новости</h2>
             <ul class="latestnews">
                 <c:forEach items="${news}" var="n" end="2">
-                    <li><img width="100px" height="100px" src="${n.pictureUrl}" alt="${n.title}"/>
+                    <li><img width="100" height="100" src="${n.pictureUrl}" alt="${n.title}"/>
 
                         <p><strong><a href="news?id=${n.id}">${n.title}</a></strong></p>
                         <br/>
@@ -94,59 +89,59 @@
 <div class="wrapper">
     <div class="container">
         <div class="content">
-            <div id="hpage_latest">
-                <ul>
-                    <li><h2>Feugiatrutrum</h2>
+            <!--<div id="hpage_latest">-->
+            <ul>
+                <li><h2>Feugiatrutrum</h2>
 
-                        <p>Nullamlacus dui ipsum conseqlo borttis non euisque morbipen a sdapibulum orna.</p>
+                    <p>Nullamlacus dui ipsum conseqlo borttis non euisque morbipen a sdapibulum orna.</p>
 
-                        <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+                    <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
 
-                        <p>Urnau ltrices quis curabitur pha sellent esque congue magnisve stib ulum quismodo nulla
-                            et.</p>
+                    <p>Urnau ltrices quis curabitur pha sellent esque congue magnisve stib ulum quismodo nulla
+                        et.</p>
 
-                        <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+                    <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
 
-                        <p>Urnau ltrices quis curabitur pha sellent esque congue magnisve stib ulum quismodo nulla
-                            et.</p>
+                    <p>Urnau ltrices quis curabitur pha sellent esque congue magnisve stib ulum quismodo nulla
+                        et.</p>
 
-                        <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
-                    </li>
-                    <li><h2>Feugiatrutrum</h2>
+                    <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+                </li>
+                <li><h2>Feugiatrutrum</h2>
 
-                        <p>Nullamlacus dui ipsum conseqlo borttis non euisque morbipen a sdapibulum orna.</p>
+                    <p>Nullamlacus dui ipsum conseqlo borttis non euisque morbipen a sdapibulum orna.</p>
 
-                        <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+                    <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
 
-                        <p>Urnau ltrices quis curabitur pha sellent esque congue magnisve stib ulum quismodo nulla
-                            et.</p>
+                    <p>Urnau ltrices quis curabitur pha sellent esque congue magnisve stib ulum quismodo nulla
+                        et.</p>
 
-                        <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+                    <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
 
-                        <p>Urnau ltrices quis curabitur pha sellent esque congue magnisve stib ulum quismodo nulla
-                            et.</p>
+                    <p>Urnau ltrices quis curabitur pha sellent esque congue magnisve stib ulum quismodo nulla
+                        et.</p>
 
-                        <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
-                    </li>
-                    <li class="last"><h2>Feugiatrutrum</h2>
+                    <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+                </li>
+                <li class="last"><h2>Feugiatrutrum</h2>
 
-                        <p>Nullamlacus dui ipsum conseqlo borttis non euisque morbipen a sdapibulum orna.</p>
+                    <p>Nullamlacus dui ipsum conseqlo borttis non euisque morbipen a sdapibulum orna.</p>
 
-                        <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+                    <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
 
-                        <p>Urnau ltrices quis curabitur pha sellent esque congue magnisve stib ulum quismodo nulla
-                            et.</p>
+                    <p>Urnau ltrices quis curabitur pha sellent esque congue magnisve stib ulum quismodo nulla
+                        et.</p>
 
-                        <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+                    <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
 
-                        <p>Urnau ltrices quis curabitur pha sellent esque congue magnisve stib ulum quismodo nulla
-                            et.</p>
+                    <p>Urnau ltrices quis curabitur pha sellent esque congue magnisve stib ulum quismodo nulla
+                        et.</p>
 
-                        <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
-                    </li>
-                </ul>
-                <br class="clear"/>
-            </div>
+                    <p class="readmore"><a href="#">Continue Reading &raquo;</a></p>
+                </li>
+            </ul>
+            <br class="clear"/>
+            <!--</div>-->
         </div>
         <div class="column">
             <h2>Видео</h2>

@@ -6,7 +6,7 @@
 body {
     margin: 0;
     padding: 0;
-    font-size: 12px;
+    font-size: 13px;
     font-family: Tahoma, Geneva, sans-serif;
     color: #666666;
     background-color: #FFFFFF;
@@ -59,8 +59,6 @@ a {
 
 .fl_left {
     float: left;
-    display: block;
-    width: 630px;
 }
 
 .fl_right {
@@ -94,7 +92,7 @@ div.wrapper {
     border-bottom: 1px solid #E3E3E3;
 }
 
-div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, div.wrapper h6 {
+div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5 {
     padding: 0;
     font-size: 20px;
     font-weight: normal;
@@ -102,6 +100,17 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
     margin-top: 0;
     margin-right: 0;
     margin-bottom: 15px;
+    margin-left: 0;
+}
+
+div.wrapper h6 {
+    padding: 0;
+    font-size: 16px;
+    font-weight: normal;
+    line-height: normal;
+    margin-top: 0;
+    margin-right: 0;
+    margin-bottom: 10px;
     margin-left: 0;
 }
 
@@ -255,10 +264,14 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
     width: 630px;
 }
 
+.con1 {
+    float: left;
+}
+
 /* ------Comments-----*/
 
 #comments {
-    margin-bottom: 40px;
+    margin: 20px 0 40px;
 }
 
 #comments .commentlist {
@@ -274,18 +287,19 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 
 #comments .commentlist li.comment_odd, #comments .commentlist li.comment_even {
     margin: 0 0 10px 0;
-    padding: 15px;
+    padding: 5px;
     list-style: none;
 }
 
 #comments .commentlist li.comment_odd {
-    color: #666666;
-    background-color: #F7F7F7;
+    color: #000000;
+    background-color: #ffffff;
+    border-bottom: 1px solid #E3E3E3;
 }
 
 #comments .commentlist li.comment_odd a {
-    color: #059BD8;
-    background-color: #F7F7F7;
+    color: #000000;
+    background-color: #ffffff;
 }
 
 #comments .commentlist li.comment_even {
@@ -331,6 +345,7 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
     display: block;
     width: 300px;
     margin-bottom: 20px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
 }
 
 .column .holder h2.title {
@@ -367,6 +382,10 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
     line-height: normal;
 }
 
+.con2 {
+    float: right;
+}
+
 /* Featured Block */
 
 .column #featured ul, .column #featured h2, .column #featured p {
@@ -394,8 +413,8 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
 .column #featured li p.imgholder {
     display: block;
     width: 240px;
-    height: 90px;
-    margin: 20px 0 15px 0;
+    height: 240px;
+    margin: 20px 0 5px 0;
     padding: 4px;
     border: 1px solid #CCCCCC;
 }
@@ -406,7 +425,7 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
     font-weight: normal;
     font-family: Georgia, "Times New Roman", Times, serif;
     line-height: normal;
-    border-bottom: 1px dotted #999999;
+    border-bottom: 1px solid #e3e3e3;
 }
 
 .column #featured p.readmore {
@@ -545,6 +564,7 @@ div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5, 
     margin: 0;
     padding: 4px;
     border: 1px solid #e3e3e3;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 #hpage_latest .readmore {

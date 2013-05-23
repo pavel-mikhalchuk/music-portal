@@ -9,9 +9,9 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 
 /**
- * @author Pavel Mikhalchuk
+ * @author Dmitry Mikhalchuk
  */
-public class NewsServlet extends HttpServlet {
+public class ReportServlet extends HttpServlet {
 
     private DB db = new DB();
 
@@ -19,10 +19,8 @@ public class NewsServlet extends HttpServlet {
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
         Long id = Long.parseLong(req.getParameter("id"));
 
-        req.setAttribute("news", db.findNews(id));
-        req.setAttribute("lastNews", db.getNews());
-        req.setAttribute("comments", db.findComments(id));
-        req.getRequestDispatcher("news.jsp").forward(req, resp);
+        req.setAttribute("report", db.findReport(id));
+        //   req.setAttribute("comments", db.findComments(id));
+        req.getRequestDispatcher("report.jsp").forward(req, resp);
     }
-
 }

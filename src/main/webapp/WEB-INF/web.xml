@@ -34,5 +34,35 @@
         <url-pattern>/addnews</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>Add Comment Servlet</servlet-name>
+        <servlet-class>com.mikhalchuk.mp.web.AddCommentServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Add Comment Servlet</servlet-name>
+        <url-pattern>/addcomment</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Report Servlet</servlet-name>
+        <servlet-class>com.mikhalchuk.mp.web.ReportServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Report Servlet</servlet-name>
+        <url-pattern>/reports</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>Add Reports Servlet</servlet-name>
+        <servlet-class>com.mikhalchuk.mp.web.AddReportServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>Add Reports Servlet</servlet-name>
+        <url-pattern>/addreports</url-pattern>
+    </servlet-mapping>
+
 
 </web-app>
