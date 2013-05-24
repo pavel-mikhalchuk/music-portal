@@ -54,7 +54,7 @@ a {
     outline: none;
     text-decoration: none;
     color: #1e1e1e;
-    background-color: #FFFFFF;
+    margin: 0 0 15px;
 }
 
 .fl_left {
@@ -89,7 +89,7 @@ div.wrapper {
     width: 100%;
     margin: 0;
     text-align: left;
-    border-bottom: 1px solid #E3E3E3;
+    border-bottom: 1px solid #CCCCCC;
 }
 
 div.wrapper h1, div.wrapper h2, div.wrapper h3, div.wrapper h4, div.wrapper h5 {
@@ -122,6 +122,10 @@ div.wrapper h6 {
 .col2 {
     color: #FFFFFF;
     background-color: #1e1e1e;
+}
+
+.col3 {
+    background-color: #e3e3e3;
 }
 
 /* ----------------------------------------------Generalise-------------------------------------*/
@@ -232,7 +236,8 @@ div.wrapper h6 {
 /* ----------------------------------------------BreadCrumb-------------------------------------*/
 
 #breadcrumb {
-    padding: 20px 0;
+    padding: 0 0 20px;
+    float: right;
 }
 
 #breadcrumb ul {
@@ -266,6 +271,10 @@ div.wrapper h6 {
 
 .con1 {
     float: left;
+}
+
+.con2 {
+    width: 630px;
 }
 
 /* ------Comments-----*/
@@ -531,7 +540,7 @@ div.wrapper h6 {
     margin-left: 0;
     padding-top: 0;
     padding-right: 0;
-    padding-bottom: 0px;
+    padding-bottom: 0;
     padding-left: 0;
 }
 
@@ -559,6 +568,25 @@ div.wrapper h6 {
 #hpage_latest li.last {
     margin-right: 0;
 }
+
+#hpage_latest li.post {
+    display: block;
+    float: left;
+    width: 140px;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-right: 25px;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
+}
+
+#hpage_latest li.lastpost {
+    margin-right: 0;
+}
+
 
 #hpage_latest img {
     margin: 0;

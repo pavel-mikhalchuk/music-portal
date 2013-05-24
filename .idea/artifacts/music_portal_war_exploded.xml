@@ -1,0 +1,18 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="music-portal:war exploded">
+    <output-path>$PROJECT_DIR$/target/music-portal-1.0-SNAPSHOT</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="music-portal/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="music-portal" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: javax.servlet:jstl:1.2" />
+          <element id="library" level="project" name="Maven: javax.el:javax.el-api:3.0-b08" />
+          <element id="library" level="project" name="Maven: mysql:mysql-connector-java:5.1.22" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

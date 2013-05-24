@@ -8,13 +8,15 @@
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" href="css/layout.css"/>
     <link rel="stylesheet" type="text/css" href="css/navi.css"/>
+    <link rel="stylesheet" type="text/css" href="css/forms.css"/>
+    <link rel="stylesheet" type="text/css" href="css/featured_slide.css"/>
 </head>
 <body id="top">
 
 <div class="wrapper col2">
     <div id="topbar">
         <div id="search">
-            <img src="http://s48.radikal.ru/i121/1305/67/8e2deb3eae0c.gif" alt="EXTRALOUD"/>
+            <a href="/"> <img src="http://s48.radikal.ru/i121/1305/67/8e2deb3eae0c.gif" alt="EXTRALOUD"/> </a>
         </div>
 
         <div id="topnav">
@@ -37,12 +39,13 @@
 </div>
 <!--###################################################################-->
 
-<div class="wrapper">
+<div class="wrapper col3">
     <div class="container">
-        <div class="content">
-            <div id="featured_slide">
-            </div>
+        <!-- <div class="content"> -->
+        <div id="featured_slide">
+            <img src="http://artefactosteste.files.wordpress.com/2011/11/as-i-lay-dying.jpg" width="960"/>
         </div>
+        <!-- </div> -->
         <br class="clear"/>
     </div>
 </div>
@@ -93,6 +96,57 @@
                     </li>
                 </c:forEach>
                 <p><strong><a href="#">все новости</a></strong>
+            </ul>
+        </div>
+        <br class="clear"/>
+    </div>
+</div>
+<!--###################################################################-->
+
+<div class="wrapper col3">
+    <div class="container">
+
+        <div id="search"> <h2>Афиша</h2></div>
+        <div id="breadcrumb">
+            <ul>
+                <li class="first">You Are Here</li>
+                <li>&#187;</li>
+            </ul>
+        </div>
+
+        <div id="hpage_latest">
+
+            <ul>
+                <li class="post">
+                    <a href="#"> <img width="130" height="190"
+                                      src="http://fc07.deviantart.net/fs12/i/2006/289/c/8/Killswitch_Engage_poster_by_Satansgoalie.jpg"
+                                      alt=""/> </a>
+                    <p class="readmore"><a href="#">Continue Reading</a></p>
+                </li>
+                <li class="post">
+                    <a href="#"> <img width="130" height="190"
+                                      src="http://fc07.deviantart.net/fs12/i/2006/289/c/8/Killswitch_Engage_poster_by_Satansgoalie.jpg"
+                                      alt=""/> </a>
+                    <p class="readmore"><a href="#">Continue Reading</a></p>
+                </li>
+                <li class="post">
+                    <a href="#"> <img width="130" height="190"
+                                      src="http://fc07.deviantart.net/fs12/i/2006/289/c/8/Killswitch_Engage_poster_by_Satansgoalie.jpg"
+                                      alt=""/> </a>
+                    <p class="readmore"><a href="#">Continue Reading</a></p>
+                </li>
+                <li class="post">
+                    <a href="#"> <img width="130" height="190"
+                                      src="http://fc07.deviantart.net/fs12/i/2006/289/c/8/Killswitch_Engage_poster_by_Satansgoalie.jpg"
+                                      alt=""/> </a>
+                    <p class="readmore"><a href="#">Continue Reading</a></p>
+                </li>
+                <li class="lastpostpost">
+                    <a href="#"> <img width="130" height="190"
+                                      src="http://fc07.deviantart.net/fs12/i/2006/289/c/8/Killswitch_Engage_poster_by_Satansgoalie.jpg"
+                                      alt=""/> </a>
+                    <p class="readmore"><a href="#">Continue Reading</a></p>
+                </li>
             </ul>
         </div>
         <br class="clear"/>

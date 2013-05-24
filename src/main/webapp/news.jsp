@@ -8,12 +8,18 @@
     <link rel="stylesheet" type="text/css" href="css/style.css"/>
     <link rel="stylesheet" type="text/css" href="css/layout.css"/>
     <link rel="stylesheet" type="text/css" href="css/navi.css"/>
+    <link rel="stylesheet" type="text/css" href="css/forms.css"/>
+    <link rel="stylesheet" type="text/css" href="css/featured_slide.css"/>
 </head>
 <body id="top">
 <!--##################################### Header ##################################-->
 
 <div class="wrapper col2">
     <div id="topbar">
+        <div id="search">
+            <a href="/"> <img src="http://s48.radikal.ru/i121/1305/67/8e2deb3eae0c.gif" alt="EXTRALOUD"/> </a>
+        </div>
+
         <div id="topnav">
             <ul>
                 <li class="active"><a href="/">Главная</a></li>
@@ -21,9 +27,9 @@
                 <li><a href="full-width.html">Афиша</a></li>
                 <li><a href="#">Статьи</a>
                     <ul>
-                        <li><a href="#">Link 1</a></li>
-                        <li><a href="#">Link 2</a></li>
-                        <li><a href="#">Link 3</a></li>
+                        <li><a href="#">Интервью</a></li>
+                        <li><a href="#">Места</a></li>
+                        <li><a href="#">Люди</a></li>
                     </ul>
                 </li>
                 <li class="last"><a href="#">О проекте</a></li>
