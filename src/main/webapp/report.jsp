@@ -97,18 +97,18 @@
 
         </div>
         <div class="column con2">
-            <h2>Новости</h2>
+            <h2>Отчёты</h2>
             <ul class="latestnews">
-                <c:forEach items="${lastNews}" var="n" end="2">
+                <c:forEach items="${lastReports}" var="n" end="2">
                     <li><img width="100" height="100" src="${n.pictureUrl}" alt="${n.title}"/>
 
-                        <p><strong><a href="news?id=${n.id}">${n.title}</a></strong></p>
+                        <p><strong><a href="reports?id=${n.id}">${n.title}</a></strong></p>
                         <br/>
 
-                        <p>${n.summary}</p>
+
                     </li>
                 </c:forEach>
-                <p><strong><a href="#">все новости</a></strong>
+                <p><strong><a href="#">все отчёты</a></strong>
             </ul>
             <br/>
 

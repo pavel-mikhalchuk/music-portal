@@ -20,7 +20,7 @@ public class ReportServlet extends HttpServlet {
         Long id = Long.parseLong(req.getParameter("id"));
 
         req.setAttribute("report", db.findReport(id));
-        req.setAttribute("lastNews", db.getNews());
+        req.setAttribute("lastReports", db.getReports());
         req.setAttribute("comments", db.findComments(id));
         req.getRequestDispatcher("report.jsp").forward(req, resp);
     }
