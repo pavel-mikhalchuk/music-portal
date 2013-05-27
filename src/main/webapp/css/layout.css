@@ -1,6 +1,5 @@
 @import url(navi.css);
 @import url(forms.css);
-@import url(tables.css);
 @import url(featured_slide.css);
 
 body {
@@ -354,7 +353,7 @@ div.wrapper h6 {
     display: block;
     width: 300px;
     margin-bottom: 20px;
-    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+    border: 1px solid #e3e3e3;
 }
 
 .column .holder h2.title {
@@ -393,6 +392,10 @@ div.wrapper h6 {
 
 .con2 {
     float: right;
+}
+
+.con3 {
+    width: 630px;
 }
 
 /* Featured Block */
@@ -592,12 +595,24 @@ div.wrapper h6 {
     margin: 0;
     padding: 4px;
     border: 1px solid #e3e3e3;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 #hpage_latest .readmore {
     font-weight: bold;
     text-align: left;
+}
+
+#hpage_latest li.col_right {
+    display: block;
+    width: 200px;
+    padding-bottom: 20px;
+    margin-top: 0;
+    margin-right: 15px;
+    margin-bottom: 0;
+    margin-left: 0;
+    padding-top: 0;
+    padding-right: 0;
+    padding-left: 0;
 }
 
 /* ----------------------------------------------Footer-------------------------------------*/

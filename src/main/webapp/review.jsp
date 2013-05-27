@@ -25,10 +25,12 @@
         <div id="topnav">
             <ul>
                 <li class="active"><a href="/">Главная</a></li>
-                <li><a href="style-demo.html">Новости</a></li>
+                <li><a href="allnews">Новости</a></li>
                 <li><a href="full-width.html">Афиша</a></li>
                 <li><a href="#">Статьи</a>
                     <ul>
+                        <li><a href="#">Отчёты</a></li>
+                        <li><a href="#">Рецензии</a></li>
                         <li><a href="#">Интервью</a></li>
                         <li><a href="#">Места</a></li>
                         <li><a href="#">Люди</a></li>
@@ -113,7 +115,7 @@
             <div id="featured">
                 <ul>
                     <li>
-                        <h2>Indonectetus facilis leonib</h2>
+                        <h2>Афиша</h2>
 
                         <p class="imgholder"><img width="240px" height="240px" src="images/demo/240x90.gif" alt=""/></p>
                     </li>

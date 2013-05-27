@@ -84,5 +84,17 @@
         <url-pattern>/addreviews</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>All News Servlet</servlet-name>
+        <servlet-class>com.mikhalchuk.mp.web.AllNewsServlet</servlet-class>
+    </servlet>
+
+    <servlet-mapping>
+        <servlet-name>All News Servlet</servlet-name>
+        <url-pattern>/allnews</url-pattern>
+    </servlet-mapping>
+
+
+
 
 </web-app>

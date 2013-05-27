@@ -22,10 +22,12 @@
         <div id="topnav">
             <ul>
                 <li class="active"><a href="/">Главная</a></li>
-                <li><a href="style-demo.html">Новости</a></li>
+                <li><a href="allnews">Новости</a></li>
                 <li><a href="full-width.html">Афиша</a></li>
                 <li><a href="#">Статьи</a>
                     <ul>
+                        <li><a href="#">Отчёты</a></li>
+                        <li><a href="#">Рецензии</a></li>
                         <li><a href="#">Интервью</a></li>
                         <li><a href="#">Места</a></li>
                         <li><a href="#">Люди</a></li>
@@ -95,7 +97,7 @@
                         <p>${n.summary}</p>
                     </li>
                 </c:forEach>
-                <p><strong><a href="#">все новости</a></strong>
+                <p><strong><a href="allnews">все новости</a></strong>
             </ul>
         </div>
         <br class="clear"/>
